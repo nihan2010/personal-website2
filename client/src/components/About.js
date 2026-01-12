@@ -12,7 +12,7 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p>
-              I'm a 15-year-old web developer and designer from Kerala, passionate about creating 
+              I'm a 16-year-old web developer and designer from Kerala, passionate about creating 
               clean, functional, and beautiful digital experiences. What started as curiosity during 
               the pandemic has evolved into a deep commitment to web development and user experience design.
             </p>
