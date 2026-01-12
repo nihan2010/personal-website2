@@ -19,7 +19,7 @@ const Hero = () => {
               Hey! I'm <span className="highlight">Nihan</span>
             </h1>
             <p className="hero-subtitle">
-              15-year-old Web Designer & Developer from Kerala
+              16-year-old Web Designer & Developer from Kerala
             </p>
             <p className="hero-description">
               I build websites that don't just work, they actually feel good to use! 
