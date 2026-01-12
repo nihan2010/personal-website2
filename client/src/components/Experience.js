@@ -49,19 +49,19 @@ const Experience = () => {
       institution: "AMLPS Moorkkanad",
       period: "2015 - 2019",
       description: "Focused on building core literacy and curiosity-driven learning as a foundation for future academic growth."
-    }
+    },
     {
       degree: "Upper Primary Education",
       institution: "AEMUPS Moorkkanad",
       period: "2019 - 2022",
       description: "Developed strong analytical skills and a passion for logical reasoning and mathematics."
-    }
+    },
     {
       degree: "High School Education",
       institution: "PTMYHSS EDAPPALAM",
       period: "2022 - 2025",
       description: "Achieved SSLC with Full A+ (10/10 GP), demonstrating consistent academic excellence and a disciplined approach to complex problem-solving."
-    }
+    },
     {
       degree: "Higher Secondary Education",
       institution: "NHSS Kolathur",
