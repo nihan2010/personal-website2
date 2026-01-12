@@ -58,7 +58,7 @@ const Experience = () => {
     },
     {
       degree: "High School Education",
-      institution: "PTMYHSS EDAPPALAM",
+      institution: "PTMYHSS Edappalam",
       period: "2022 - 2025",
       description: "Achieved SSLC with Full A+ (10/10 GP), demonstrating consistent academic excellence and a disciplined approach to complex problem-solving."
     },
