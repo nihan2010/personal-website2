@@ -1,0 +1,280 @@
+/* Modal Overlay - Dark blurred background */
+.quote-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Modal Content */
+.quote-modal-content {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Close Button */
+.quote-modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #6b7280;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  line-height: 1;
+  padding: 0;
+}
+
+.quote-modal-close:hover {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+/* Modal Header */
+.quote-modal-header {
+  margin-bottom: 2rem;
+  padding-right: 2rem;
+}
+
+.quote-modal-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.quote-modal-header p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Form Styles - Matching Contact Form */
+.quote-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.quote-modal-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.quote-modal-form .form-group label {
+  display: block;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.quote-modal-form .form-group input,
+.quote-modal-form .form-group textarea,
+.quote-modal-form .form-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+.quote-modal-form .form-group input:focus,
+.quote-modal-form .form-group textarea:focus,
+.quote-modal-form .form-select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.quote-modal-form .form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Single dropdown arrow; avoid shorthand so arrow doesn’t tile */
+.quote-modal-form .form-select {
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 12px 12px;
+  padding-right: 2.5rem;
+}
+
+.quote-modal-form .btn {
+  background: #2563eb;
+  color: white;
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.quote-modal-form .btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* Dark Mode Styles */
+body.dark-mode .quote-modal-content {
+  background: #1f2937;
+  border-color: #374151;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .quote-modal-close {
+  color: #9ca3af;
+}
+
+body.dark-mode .quote-modal-close:hover {
+  background: #374151;
+  color: #e5e7eb;
+}
+
+body.dark-mode .quote-modal-header h2 {
+  color: #ffffff;
+}
+
+body.dark-mode .quote-modal-header p {
+  color: #9ca3af;
+}
+
+body.dark-mode .quote-modal-form .form-group label {
+  color: #e5e7eb;
+}
+
+body.dark-mode .quote-modal-form .form-group input,
+body.dark-mode .quote-modal-form .form-group textarea {
+  background: #374151;
+  border-color: #4b5563;
+  color: #e5e7eb;
+}
+
+body.dark-mode .quote-modal-form .form-group input:focus,
+body.dark-mode .quote-modal-form .form-group textarea:focus,
+body.dark-mode .quote-modal-form .form-select:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+}
+
+/* Dark select: use background-color so arrow doesn’t reset to repeat */
+body.dark-mode .quote-modal-form .form-select {
+  background-color: #374151;
+  border-color: #4b5563;
+  color: #e5e7eb;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%239ca3af' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 12px 12px;
+}
+
+body.dark-mode .quote-modal-form .btn {
+  background: #2563eb;
+  color: white;
+}
+
+body.dark-mode .quote-modal-form .btn:hover {
+  background: #1d4ed8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .quote-modal-overlay {
+    padding: 0.5rem;
+  }
+
+  .quote-modal-content {
+    padding: 2rem 1.5rem;
+    max-height: 95vh;
+  }
+
+  .quote-modal-close {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .quote-modal-header {
+    padding-right: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .quote-modal-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .quote-modal-header p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-modal-content {
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+  }
+
+  .quote-modal-header h2 {
+    font-size: 1.5rem;
+  }
+}
