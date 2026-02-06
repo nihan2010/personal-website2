@@ -2,12 +2,7 @@ import React from 'react';
 import './Services.css';
 
 const Services = ({ onGetQuote }) => {
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+
 
   const services = [
     {
