@@ -11,7 +11,14 @@
     "start": "cd server && npm start",
     "install-deps": "npm install && cd server && npm install && cd client && npm install"
   },
-  "keywords": ["portfolio", "fullstack", "react", "node", "liquid-glass", "ui-ux"],
+  "keywords": [
+    "portfolio",
+    "fullstack",
+    "react",
+    "node",
+    "liquid-glass",
+    "ui-ux"
+  ],
   "author": "Nihan Najeeb P",
   "license": "MIT",
   "devDependencies": {
