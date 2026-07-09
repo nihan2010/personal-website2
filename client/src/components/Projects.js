@@ -48,7 +48,7 @@ const Projects = () => {
     {
     title: "SVG Clean",
     description: "A privacy-first SVG optimization tool that cleans messy SVG code, removes unnecessary markup, generates responsive SVGs, and provides a live preview—all processed entirely in the browser.",
-    image: "https://i.ibb.co/kgf0nwTn/Screenshot-2026-02-16-035524.png", // Replace with your SVG Clean screenshot
+    image: "https://i.ibb.co/pB5qdw70/Screenshot-2026-07-09-212610.png",
     technologies: ["React", "Vite", "Tailwind CSS", "SVGO"],
     liveUrl: "https://svg-cleaner-app.vercel.app/",
     githubUrl: "https://github.com/nihan2010/svg-clean",
