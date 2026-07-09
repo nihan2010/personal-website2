@@ -46,6 +46,15 @@ const Projects = () => {
       category: "Frontend"
     },
     {
+    title: "SVG Clean",
+    description: "A privacy-first SVG optimization tool that cleans messy SVG code, removes unnecessary markup, generates responsive SVGs, and provides a live preview—all processed entirely in the browser.",
+    image: "https://i.ibb.co/kgf0nwTn/Screenshot-2026-02-16-035524.png", // Replace with your SVG Clean screenshot
+    technologies: ["React", "Vite", "Tailwind CSS", "SVGO"],
+    liveUrl: "https://svg-cleaner-app.vercel.app/",
+    githubUrl: "https://github.com/nihan2010/svg-clean",
+    category: "Developer Tool"
+    },
+    {
       title: "BuildStack",
       description: "BuildStack analyzes any website URL and reveals its technology stack, frameworks, infrastructure, analytics tools, and scripts in seconds.",
       image: "https://i.ibb.co/Tqd0KWcS/buildstack-card-cover.png",
